@@ -1,0 +1,23 @@
+{
+  "name": "Bobs-Garage-Sale",
+  "version": "1.0.0",
+  "description": "See what bob has for sale!",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kluu1/Bobs-Garage-Sale.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kluu1/Bobs-Garage-Sale/issues"
+  },
+  "homepage": "https://github.com/kluu1/Bobs-Garage-Sale#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
