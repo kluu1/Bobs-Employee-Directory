@@ -8,7 +8,7 @@ import ReactDOM from 'react-dom';
 const App = () => {
   return (
     <div>
-      React App #2
+      Bob's Garage Sale
     </div>
   );
 };
