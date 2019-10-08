@@ -1,5 +1,13 @@
 module.exports = {
-  "extends": "airbnb-base",
+  "plugins": [
+    "react",
+    "meteor"
+  ],
+  "extends": [
+    "airbnb-base",
+    "plugin:react/recommended",
+    "plugin:meteor/recommended"
+  ],
   "rules": {
     "semi": ["error", "always"],
     "quotes": ["error", "single"],
@@ -13,6 +21,15 @@ module.exports = {
     "no-console": ["error", { allow: ["warn", "error"] }],
     "class-methods-use-this": "off",
     "no-underscore-dangle": "off",
-    "no-await-in-loop": "off"
+    "no-await-in-loop": "off",
+    "arrow-body-style": "off",
+    "arrow-parens": "off"
+  },
+  "parserOptions": {
+    "ecmaVersion": 6,
+      "sourceType": "module",
+        "ecmaFeatures": {
+      "jsx": true
+    }
   }
 };
