@@ -1,5 +1,5 @@
 {
-  "name": "Bobs-Garage-Sale",
+  "name": "bobs_garage_sale",
   "version": "1.0.0",
   "description": "See what bob has for sale!",
   "main": "index.js",
@@ -18,8 +18,11 @@
   },
   "homepage": "https://github.com/kluu1/Bobs-Garage-Sale#readme",
   "dependencies": {
+    "@babel/runtime": "^7.6.2",
     "express": "^4.17.1",
-    "mongodb": "^3.3.2"
+    "meteor-node-stubs": "^0.4.1",
+    "react": "^16.10.2",
+    "react-dom": "^16.10.2"
   },
   "devDependencies": {
     "eslint": "^6.5.1",
