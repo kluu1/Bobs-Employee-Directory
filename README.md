@@ -1,2 +1,2 @@
-# Bobs-Garage-Sale
-See what bob has for sale!
+# Bobs-Employee-Directory
+A directory of employees who works for Bob.
