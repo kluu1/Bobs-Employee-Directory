@@ -23,7 +23,8 @@ module.exports = {
     "no-underscore-dangle": "off",
     "no-await-in-loop": "off",
     "arrow-body-style": "off",
-    "arrow-parens": "off"
+    "arrow-parens": "off",
+    "no-undef": "off"
   },
   "parserOptions": {
     "ecmaVersion": 6,

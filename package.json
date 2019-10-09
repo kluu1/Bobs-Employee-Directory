@@ -19,6 +19,7 @@
   "homepage": "https://github.com/kluu1/Bobs-Garage-Sale#readme",
   "dependencies": {
     "@babel/runtime": "^7.6.2",
+    "axios": "^0.19.0",
     "express": "^4.17.1",
     "meteor-node-stubs": "^0.4.1",
     "react": "^16.10.2",
