@@ -1,5 +1,5 @@
 import React from 'react';
-import ImageDetail from './image_details';
+import ImageDetail from './ImageDetails';
 
 const ImageList = props => {
   const validImages = props.images.filter(image => !image.is_album);

@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import ReactDOM from 'react-dom';
 import axios from 'axios';
-import ImageList from './components/image_list';
+import ImageList from './components/ImageList';
 
 // Create componenet
 class App extends Component {
