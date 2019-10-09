@@ -1,14 +1,12 @@
-// Any JS in here is automatically ran for us
-
-// Import the react library
 import React from 'react';
 import ReactDOM from 'react-dom';
+import ImageList from './components/image_list';
 
 // Create componenet
 const App = () => {
   return (
     <div>
-      Bob's Garage Sale
+      <ImageList />
     </div>
   );
 };
