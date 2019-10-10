@@ -1,30 +1,11 @@
-import React, { Component } from 'react';
+import React from 'react';
 import ReactDOM from 'react-dom';
-import axios from 'axios';
-import ImageList from './components/ImageList';
+import EmployeeList from './components/EmployeeList';
 
-// Create componenet
-class App extends Component {
-  constructor(props) {
-    super(props);
-
-    this.state = { images: [] };
-  }
-
-  componentDidMount() {
-    axios
-      .get('https://api.imgur.com/3/gallery/hot/viral/0.json')
-      .then(response => this.setState({ images: response.data.data }));
-  }
-
-  render() {
-    return (
-      <div>
-        <ImageList images={this.state.images} />
-      </div>
-    );
-  }
-}
+// Create App componenet
+const App = () => {
+  return <EmployeeList />;
+};
 
 // Render this component to the screen
 Meteor.startup(() => {
