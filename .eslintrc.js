@@ -24,7 +24,8 @@ module.exports = {
     "no-await-in-loop": "off",
     "arrow-body-style": "off",
     "arrow-parens": "off",
-    "no-undef": "off"
+    "no-undef": "off",
+    "import/no-unresolved": "off"
   },
   "parserOptions": {
     "ecmaVersion": 6,

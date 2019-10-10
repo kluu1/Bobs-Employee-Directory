@@ -1,17 +1,20 @@
 import React from 'react';
 
-const ImageDetail = props => {
+const ImageDetails = ({ item }) => {
+  const { name, email, phone, avatar } = item;
+
   return (
-    <li className="media list-group-item">
-      <div className="media-left">
-        <img src={props.image.link} />
+    <div className="thumbnail">
+      <img src={avatar} />
+      <div className="caption">
+        <h3>{name}</h3>
+        <ul className="list-group">
+          <li className="list-group-item">Email: {email}</li>
+          <li className="list-group-item">Phone: {phone}</li>
+        </ul>
       </div>
-      <div className="media-body">
-        <h4 className="media-heading">{props.image.title}</h4>
-        <p>{props.image.description}</p>
-      </div>
-    </li>
+    </div>
   );
 };
 
-export default ImageDetail;
+export default ImageDetails;
