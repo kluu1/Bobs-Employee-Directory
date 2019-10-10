@@ -1,11 +1,11 @@
 import _ from 'lodash';
 import { Meteor } from 'meteor/meteor';
 import { image, helpers } from 'faker';
-import { Items } from '../imports/collections/items';
+import { Employees } from '../imports/collections/employees';
 
 Meteor.startup(() => {
   // Check to see if data exists in the collection on startup
-  const numberRecords = Items.find({}).count();
+  const numberRecords = Employees.find({}).count();
 
   // If no data, generate some data with faker
   if (!numberRecords) {
@@ -16,7 +16,7 @@ Meteor.startup(() => {
         phone
       } = helpers.createCard();
 
-      Items.insert({
+      Employees.insert({
         name,
         email,
         phone,
@@ -25,8 +25,7 @@ Meteor.startup(() => {
     });
   }
 
-  Meteor.publish('items', (perPage) => {
-    // if (perPage === Number) console.log('Is a number');
-    return Items.find({}, { limit: Number(perPage) });
+  Meteor.publish('employees', (perPage) => {
+    return Employees.find({}, { limit: Number(perPage) });
   });
 });

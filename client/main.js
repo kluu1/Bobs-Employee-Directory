@@ -1,10 +1,10 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import ImageList from './components/ImageList';
+import EmployeeList from './components/EmployeeList';
 
 // Create App componenet
 const App = () => {
-  return <ImageList />;
+  return <EmployeeList />;
 };
 
 // Render this component to the screen

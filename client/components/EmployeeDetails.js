@@ -1,6 +1,6 @@
 import React from 'react';
 
-const ImageDetails = ({ item }) => {
+const EmployeeDetails = ({ item }) => {
   const { name, email, phone, avatar } = item;
 
   return (
@@ -17,4 +17,4 @@ const ImageDetails = ({ item }) => {
   );
 };
 
-export default ImageDetails;
+export default EmployeeDetails;

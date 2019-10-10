@@ -1,17 +1,18 @@
 import React, { Component } from 'react';
 import { createContainer } from 'meteor/react-meteor-data';
-import { Items } from '../../imports/collections/items';
-import ImageDetail from './ImageDetails';
+import { Employees } from '../../imports/collections/employees';
+import EmployeeDetail from './EmployeeDetails';
 
+// Return 20 results per page
 const PER_PAGE = 20;
 
-class ImageList extends Component {
+class EmployeeList extends Component {
   componentDidMount() {
     this.page = 1;
   }
 
   handleButtonClick() {
-    Meteor.subscribe('items', PER_PAGE * (this.page + 1));
+    Meteor.subscribe('employees', PER_PAGE * (this.page + 1));
     this.page += 1;
   }
 
@@ -19,8 +20,8 @@ class ImageList extends Component {
     return (
       <div>
         <div className="items-list">
-          {this.props.items.map(item => (
-            <ImageDetail key={item._id} item={item} />
+          {this.props.employees.map(item => (
+            <EmployeeDetail key={item._id} item={item} />
           ))}
         </div>
         <button
@@ -36,8 +37,8 @@ class ImageList extends Component {
 
 export default createContainer(() => {
   // Setup subscription
-  Meteor.subscribe('items', PER_PAGE);
+  Meteor.subscribe('employees', PER_PAGE);
 
   // Return an object. Whatever we return will be sent to EmployeeList as props
-  return { items: Items.find({}).fetch() };
-}, ImageList);
+  return { employees: Employees.find({}).fetch() };
+}, EmployeeList);
