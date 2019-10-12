@@ -15,7 +15,6 @@ export async function setupApi() {
 
 	app.get('/api/v1/test', (req,res) => {
 		var content = req.body;
-		console.log(content);
 		res.status(200).send('Success');
     });
 
