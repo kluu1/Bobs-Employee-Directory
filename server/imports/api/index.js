@@ -18,4 +18,6 @@ export async function setupApi() {
 		console.log(content);
 		res.status(200).send('Success');
     });
+
+    WebApp.connectHandlers.use(app);
 }
